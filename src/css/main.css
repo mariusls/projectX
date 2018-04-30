@@ -1,5 +1,161 @@
-.btn {
-  background-color: orange; }
-
-h1 {
-  font-size: 100px; }
+.campaign-form-wrapper {
+  /*
+    @media only screen and (min-width: 600px){
+        input[type="text"], input[type="numbers"], input[type="tel"], input[type="email"], input[type="search"], input[type="textarea"], .form__textarea, .form__textinput {
+            max-width: 500px;
+        }
+    }*/
+  /*input[type="checkbox"] {
+        vertical-align: baseline;
+        position: absolute;
+        opacity: 0;
+    }*/ }
+  .campaign-form-wrapper select {
+    height: 58px; }
+  .campaign-form-wrapper .box-shadow {
+    box-shadow: 0 5px 15px #a3a3a3; }
+  .campaign-form-wrapper .section__box {
+    background-color: white;
+    position: relative; }
+  .campaign-form-wrapper .section--beige {
+    background: #e9eae0; }
+  .campaign-form-wrapper .full-height {
+    height: 100%; }
+  .campaign-form-wrapper .section__form-box {
+    padding: 28px 20px 0 20px;
+    margin: 28px 0 28px 0;
+    border-bottom: 6px solid #f6f7f3; }
+  .campaign-form-wrapper label, .campaign-form-wrapper .form__label {
+    display: block;
+    font-size: 18px;
+    line-height: 42px; }
+  .campaign-form-wrapper button, .campaign-form-wrapper input, .campaign-form-wrapper select, .campaign-form-wrapper textarea {
+    margin: 0; }
+  @media (max-width: 979px) and (min-width: 768px) {
+    .campaign-form-wrapper input, .campaign-form-wrapper textarea {
+      margin-left: 0; } }
+  .campaign-form-wrapper .checkbox-holder {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 25px;
+    padding-left: 35px; }
+    .campaign-form-wrapper .checkbox-holder .checkbox-custom {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee; }
+    .campaign-form-wrapper .checkbox-holder input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer; }
+    .campaign-form-wrapper .checkbox-holder:hover input ~ .checkbox-custom {
+      background-color: #ccc; }
+    .campaign-form-wrapper .checkbox-holder input:checked ~ .checkbox-custom {
+      background-color: #007ab2; }
+    .campaign-form-wrapper .checkbox-holder .checkbox-custom:after {
+      content: "";
+      position: absolute;
+      display: none; }
+    .campaign-form-wrapper .checkbox-holder input:checked ~ .checkbox-custom:after {
+      display: block; }
+    .campaign-form-wrapper .checkbox-holder .checkbox-custom:after {
+      left: 9px;
+      top: 3px;
+      width: 8px;
+      height: 15px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  .campaign-form-wrapper input[type="text"], .campaign-form-wrapper input[type="tel"], .campaign-form-wrapper input[type="numbers"], .campaign-form-wrapper input[type="email"], .campaign-form-wrapper input[type="search"], .campaign-form-wrapper input[type="textarea"], .campaign-form-wrapper .form__textarea, .campaign-form-wrapper .form__textinput {
+    display: block;
+    font-size: 18px;
+    background: #f6f7f3;
+    border: 2px solid #e9eae0;
+    color: #222;
+    padding: 14px 14px;
+    border-radius: 0;
+    width: 100%; }
+  .campaign-form-wrapper .form__footer {
+    margin: 15px 0; }
+  .campaign-form-wrapper .form__footer label {
+    display: inline-block !important;
+    margin-bottom: 15px; }
+  .campaign-form-wrapper span.form__agreement {
+    font-size: 17px;
+    color: #333333;
+    font-weight: normal; }
+  .campaign-form-wrapper .btn-submit {
+    font-size: 17px;
+    color: white;
+    display: block;
+    margin: 15px auto 30px auto  !important;
+    background: #007ab2;
+    border: 0;
+    width: 80%;
+    text-shadow: none;
+    padding-top: 12px;
+    padding-bottom: 12px; }
+    @media only screen and (min-width: 500px) {
+      .campaign-form-wrapper .btn-submit {
+        width: 50%; } }
+    .campaign-form-wrapper .btn-submit:hover {
+      background: #009de5;
+      color: white; }
+  .campaign-form-wrapper input::placeholder {
+    font-style: italic;
+    color: #222; }
+  .campaign-form-wrapper .search-result-list {
+    margin-top: 35px; }
+    .campaign-form-wrapper .search-result-list ul {
+      padding-left: 0; }
+      .campaign-form-wrapper .search-result-list ul li:last-of-type {
+        border-bottom: 2px solid #e9eae0; }
+      .campaign-form-wrapper .search-result-list ul li {
+        display: none;
+        list-style-type: none;
+        border-top: 2px solid #e9eae0; }
+        .campaign-form-wrapper .search-result-list ul li .search-result-item.item-selected {
+          padding-left: 20px;
+          background: #009de5;
+          color: white;
+          border: 5px solid #007ab2; }
+          .campaign-form-wrapper .search-result-list ul li .search-result-item.item-selected:hover {
+            background: #009de5; }
+          .campaign-form-wrapper .search-result-list ul li .search-result-item.item-selected span {
+            color: white; }
+        .campaign-form-wrapper .search-result-list ul li .search-result-item {
+          padding-top: 15px;
+          padding-bottom: 15px; }
+          .campaign-form-wrapper .search-result-list ul li .search-result-item:hover {
+            transition: all .4s;
+            background: #e9eae0;
+            padding-left: 20px; }
+          .campaign-form-wrapper .search-result-list ul li .search-result-item .result-anchor:hover {
+            text-decoration: none;
+            cursor: pointer; }
+          .campaign-form-wrapper .search-result-list ul li .search-result-item .search-result-header {
+            display: block;
+            padding-top: 5px;
+            padding-bottom: 15px;
+            color: #0465a3;
+            font-size: 22px; }
+          .campaign-form-wrapper .search-result-list ul li .search-result-item .search-result-address {
+            display: block;
+            color: #333333;
+            font-size: 17px; }
+  .campaign-form-wrapper .show {
+    display: block; }
+  .campaign-form-wrapper .hidden {
+    display: none; }
+  .campaign-form-wrapper .alert {
+    display: none; }
+  .campaign-form-wrapper .error {
+    line-height: 1.42;
+    margin: 5px 0;
+    font-size: 15px;
+    color: red; }

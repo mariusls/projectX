@@ -1,16 +1,147 @@
-<!doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Test proejct</title>
+    <title>Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+	<script src="js/search-filter.js"></script>
+	<!--<script src="js/validation-custom.js"></script> -->
 </head>
 <body>
-    <button class="btn btn-default">Sas</button>
-    <h1>o m g </h1>
+    
+<div class="section--beige">
+	<div class="container">
+        <div class="campaign-form-wrapper">
+            <div class="row">
+                <div class="col-md-6 col-mx-12">
+                    <section class="section__box section__form-box box-shadow" role="main">
+                        <div class="alert alert-success">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            Takk for din interesse! 
+                        </div>
+                        <form>
+                            
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <div id="firstname-group" class="form-group">
+                                        <label class="" for="firstname">Fornavn</label>
+                                        <input type="text" autofocus="" class="form__textinput" name="firstname" id="firstname" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <div id="lastname-group" class="form-group">
+                                        <label class="" for="lastname">Etternavn</label>
+                                        <input type="text" class="form__textinput" placeholder="" name="lastname" id="lastname" required>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="email-group" class="form-group">
+                                <label class="" for="email">E-post</label>
+                                <input type="email" class="form__textinput" placeholder="" name="email" id="email" required>
+                                <p>Vi sender kvittering på e-post</p>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 col-xs-12">
+                                    <div id="mobile-group" class="form-group">
+                                        <label class="" for="mobile">Mobiltelefon</label>
+                                        <input type="tel" class="form__textinput form__field--short" placeholder="" name="mobile" id="mobile" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-xs-12">
+                                    <div id="appointmenttype-group" class="form-group">
+                                        <label class="" for="address">Avtale tid for</label>
+                                        <select class="form__textinput" id="appointmenttype" name="appointmenttype">
+                                            <option value="" disabled selected value></option>
+                                            <option value="Time for synstest">Time for synstest</option>
+                                            <option value="Finne nye briller">Finne nye briller</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="postalcode-group" class="form-group">
+                                <label class="" for="postalcode">Velg din nærmeste optiker</label>
+                                <input type="text" class="form__textinput search-input" placeholder="Postnr, sted, butikk" name="postalcode" id="postalcode" required>
+                            </div>
+                            <div class="search-result-list">
+                                <ul class="ul-result-list">
+                                    <li>
+                                        <div class="search-result-item">
+                                            <a class="result-anchor">
+                                                <span class="search-result-header">
+                                                    Notodden Optikk, 3450
+                                                </span>
+                                                <span class="search-result-address">
+                                                    Telegt. 4, Notodden
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="search-result-item">
+                                            <a class="result-anchor">
+                                                <span class="search-result-header">
+                                                    Bekkestua Optikk, 1356
+                                                </span>
+                                                <span class="search-result-address">
+                                                    Veien 1234
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="search-result-item">
+                                            <a class="result-anchor">
+                                                <span class="search-result-header">
+                                                    Sentrum Optikk, 0552
+                                                </span>
+                                                <span class="search-result-address">
+                                                    Stortingsgata 121, Oslo
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="search-result-item">
+                                            <a class="result-anchor">
+                                                <span class="search-result-header">
+                                                    Hei, 9955
+                                                </span>
+                                                <span class="search-result-address">
+                                                    Gata 132, Tangen
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
 
+
+
+                            <div class="form__footer">
+                                    <label class="checkbox-holder">
+                                        <input type="checkbox" id="customcheckbox" name="customcheckbox" required>
+                                        <span class="checkbox-custom"></span>
+                                        <label for="checkbox__agreement"><span class="form__agreement">Jeg godtar at dere sender meg informasjon</span></label>
+                                    </label>
+                                
+                                <button type="submit" class="btn btn-submit">BEKREFT</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+<script src="js/search-filter.js"></script>
+<script src="js/validation-custom.js"></script>
 </body>
 </html>

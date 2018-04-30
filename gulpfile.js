@@ -3,7 +3,7 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 
 gulp.task('sass', function(){
-    return gulp.src('src/scss/**/*.scss')
+    return gulp.src('src/scss/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('src/css'))
         pipe(browserSync.reload({
@@ -14,15 +14,14 @@ gulp.task('sass', function(){
 gulp.task('browserSync', function(){
     browserSync.init({
         server: {
-            baseDir: 'src/'
+            baseDir: 'src'
         },
     })
 })
 
 // WATCHER
 gulp.task('watch', ['browserSync', 'sass'], function(){
-    gulp.watch('src/scss/**/*.scss', ['sass']);
+    gulp.watch('src/scss/*.scss', ['sass']);
     gulp.watch('src/*.html', browserSync.reload);
     gulp.watch('src/js/**/*.js', browserSync.reload);
-    console.log("Browsersync");
 })
